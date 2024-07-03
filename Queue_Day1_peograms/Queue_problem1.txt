@@ -1,0 +1,67 @@
+Given an integer k and a queue of integers, reverse the order of the first k elements of the queue, leaving the other elements in the same relative order.
+
+Constraints:
+1 <= k <= queue.size()
+The queue will have at most 10^5 elements.
+Each element of the queue is an integer between -10^9 and 10^9.
+
+Input:
+An integer k
+A queue of integers
+
+Output:
+The modified queue with the first k elements reversed
+
+Example:
+Example 1:
+
+Input:
+k = 3
+queue = [10, 20, 30, 40, 50]
+
+Output:
+queue = [30, 20, 10, 40, 50]
+
+
+___________________________________________________________________________
+Practice in java:
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class ReverseKElements {
+    public static Queue<Integer> reverseKElements(Queue<Integer> queue, int k) {
+        //write your logic here
+    }
+
+    public static void main(String[] args) {
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+        queue.add(40);
+        queue.add(50);
+
+        int k = 3;
+        queue = reverseKElements(queue, k);
+
+        System.out.println("Modified queue: " + queue);
+    }
+}
+
+
+
+___________________________________________________________________________
+Practice in python:
+
+from collections import deque
+
+def reverse_k_elements(queue, k):
+    #write your logic here
+
+# Example usage:
+queue = deque([10, 20, 30, 40, 50])
+k = 3
+queue = reverse_k_elements(queue, k)
+print("Modified queue:", list(queue))
